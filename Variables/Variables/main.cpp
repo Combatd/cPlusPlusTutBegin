@@ -8,7 +8,19 @@
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int numberCats = 5;
+    int numberDogs = 7;
+    int numberAnimals = numberCats + numberDogs;
+    
+    std::cout << "Number of cats: " << numberCats << std::endl;
+    std::cout << "Number of dogs: " << numberDogs << std::endl;
+    std::cout << "Total number of animals: " << numberAnimals << std::endl;
+    
+    std::cout << "New dog acquired!" << std::endl;
+    
+    numberDogs = numberDogs + 1;
+    std::cout << "New number of dogs: " << numberDogs << std::endl;
+    std::cout << "New number of animals: " << numberAnimals << std::endl;
+    
     return 0;
 }
