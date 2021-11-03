@@ -16,5 +16,11 @@ int main(int argc, const char * argv[]) {
     
     std::cout << "You entered: " << input << std::endl;
     
+    int value;
+    std::cout << "Enter a number: " << std::flush;
+    std::cin >> value; // if we put a non-integer value, we get 0
+    
+    std::cout << "You entered..." << value << std::endl;
+    
     return 0;
 }
