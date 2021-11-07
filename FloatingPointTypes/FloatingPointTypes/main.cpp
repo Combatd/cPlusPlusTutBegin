@@ -15,5 +15,9 @@ int main(int argc, const char * argv[]) {
     std::cout << std::fixed << floatValue << std::endl;
     std::cout << std::setprecision(20) << std::fixed << floatValue << std::endl;
     
+    std::cout << sizeof(double) << std::endl;
+    double dValue = 123.456789;
+    std::cout << std::setprecision(20) << std::fixed << dValue << std::endl;
+    
     return 0;
 }
