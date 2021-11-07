@@ -6,11 +6,12 @@
 //
 
 #include <iostream>
+#include <iomanip>
 
 int main(int argc, const char * argv[]) {
     float floatValue = 76.4;
     
-    std::cout << floatValue << std::endl;
+    std::cout << std::fixed << floatValue << std::endl;
     
     return 0;
 }
