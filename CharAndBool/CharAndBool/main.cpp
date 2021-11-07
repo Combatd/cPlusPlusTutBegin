@@ -18,5 +18,9 @@ int main(int argc, const char * argv[]) {
     std::cout << int(cValue) << std::endl; // => 55
     std::cout << "Size of char: " << sizeof(char) << std::endl;
     
+    wchar_t wValue = 't'; // wchar_t is in unicode
+    std::cout << (char)wValue << std::endl; // 4 bytes
+    std::cout << "Size of wchar_tL " << sizeof(wchar_t) << std::endl;
+    
     return 0;
 }
