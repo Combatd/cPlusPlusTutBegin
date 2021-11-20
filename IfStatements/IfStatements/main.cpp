@@ -14,7 +14,19 @@ int main(int argc, const char * argv[]) {
     std::string input;
     std::cin >> input;
     
-    std::cout << "'" << input << "'" << std::endl;
+    std::string password;
+    
+    std::cout << "Reenter your password! " << std::flush;
+    
+    std::cin >> password;
+    
+    
+    if(input == password) {
+        std::cout << "Password Accepted" << std::endl;
+    } else {
+        std::cout << "Access denied" << std::endl;
+    }
+
     
     return 0;
 }
