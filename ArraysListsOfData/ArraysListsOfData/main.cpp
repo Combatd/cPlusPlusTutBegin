@@ -40,5 +40,21 @@ int main(int argc, const char * argv[]) {
         std::cout << "Element at index " << i << " " << texts[i] << std::endl;
     }
     
+    std::string animals[2][3] = {
+        {"fox", "dog", "cat"},
+        {"mouse", "squirrel", "parrot"}
+    };
+    
+    /*
+     * Nested for loop to access vectors/2D arrays
+     */
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0 ; j < 3; j++) {
+            std::cout << animals[i][j] << " " <<  std::flush;
+        }
+        
+        std::cout << std::endl;
+    }
+    
     return 0;
 }
