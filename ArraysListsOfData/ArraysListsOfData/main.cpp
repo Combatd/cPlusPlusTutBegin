@@ -55,6 +55,15 @@ int main(int argc, const char * argv[]) {
         
         std::cout << std::endl;
     }
+
+    
+    int randomValues[] = {1, 2, 3, 4};
+    
+    // each integer takes 4 bytes, so dividing by int would make it 1 instead of 4
+    for (int i = 0; i < sizeof(randomValues) / sizeof(int); i++) {
+        std::cout << randomValues[i] << " " << std::flush;
+    }
+    std::cout << std::endl;
     
     return 0;
 }
