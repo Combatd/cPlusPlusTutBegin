@@ -13,7 +13,7 @@ void showMenu() {
     std::cout << "3. Quit" << std::endl;
 }
 
-int processSelection() {
+int getInput() {
     std::cout << "Enter selection: " << std::endl;
     
     int input;
@@ -21,18 +21,8 @@ int processSelection() {
     return input;
 }
 
-
-int main(int argc, const char * argv[]) {
-    /*
-     * A function in C++ is a reusable block of code that can be invoked
-     * and split up your program into logical sections rather than writing
-     * procedural code all over the place
-     */
-    
-    showMenu();
-    int input = processSelection(); // this variable passes into the switch
-    
-    switch (input) {
+void processSelection(int selection) {
+    switch (selection) {
         case 1:
             std::cout << "Saving.";
             break;
@@ -46,8 +36,21 @@ int main(int argc, const char * argv[]) {
             std::cout << "Please select an item from the menu." << std::endl;
             showMenu();
             std::cout << std::endl;
-            processSelection();
+            getInput();
     }
+}
+
+
+int main(int argc, const char * argv[]) {
+    /*
+     * A function in C++ is a reusable block of code that can be invoked
+     * and split up your program into logical sections rather than writing
+     * procedural code all over the place
+     */
     
+    showMenu();
+    int input = getInput(); // this variable passes into the switch
+    processSelection(input); // the input will be the selection argument
+
     return 0;
 }
