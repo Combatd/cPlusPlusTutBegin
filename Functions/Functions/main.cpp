@@ -7,6 +7,8 @@
 
 #include <iostream>
 
+#include "../Prototypes/utils.h"
+
 void showMenu() {
     std::cout << "1. Search" << std::endl;
     std::cout << "2. View Record" << std::endl;
@@ -51,6 +53,16 @@ int main(int argc, const char * argv[]) {
     showMenu();
     int input = getInput(); // this variable passes into the switch
     processSelection(input); // the input will be the selection argument
-
+    
+    /*
+     Headers and prototypes are here
+     */
+    doSomething();
+    
     return 0;
+}
+
+
+void doSomething() {
+    std::cout << "We implemented prototype#doSomething here" << std::endl;
 }

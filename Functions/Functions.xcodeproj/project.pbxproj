@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		5A5270C22E7B6D5C0020C150 /* Functions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Functions; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AED1C532E8DF84000AB494C /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,8 +45,9 @@
 		5A5270B92E7B6D5C0020C150 = {
 			isa = PBXGroup;
 			children = (
-				5A5270C42E7B6D5C0020C150 /* Functions */,
+				5AED1C502E8DF7DD00AB494C /* Prototypes */,
 				5A5270C32E7B6D5C0020C150 /* Products */,
+				5A5270C42E7B6D5C0020C150 /* Functions */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,13 +59,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5AED1C502E8DF7DD00AB494C /* Prototypes */ = {
+			isa = PBXGroup;
+			children = (
+				5AED1C532E8DF84000AB494C /* utils.h */,
+			);
+			path = Prototypes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5AED1C4E2E8DF73900AB494C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		5A5270C12E7B6D5C0020C150 /* Functions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A5270C92E7B6D5C0020C150 /* Build configuration list for PBXNativeTarget "Functions" */;
 			buildPhases = (
+				5AED1C4E2E8DF73900AB494C /* Headers */,
 				5A5270BE2E7B6D5C0020C150 /* Sources */,
 				5A5270BF2E7B6D5C0020C150 /* Frameworks */,
 				5A5270C02E7B6D5C0020C150 /* CopyFiles */,
