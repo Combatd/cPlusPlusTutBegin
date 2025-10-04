@@ -5,15 +5,19 @@
 //  Created by Mark Calvelo on 10/4/25.
 //
 
+#include <iostream>
 #include <stdio.h>
 #include "Cat.h"
 
 int main() {
+    std::cout << "Starting program..." << std::endl;
     
-    Cat cat1;
+    // scope of bob which then will be destroyed
+    {
+        Cat bob;
+        bob.speak();
+    }
     
-    cat1.speak();
-    cat1.jump();
-    
+    std::cout << "Ending program..." << std::endl;
     return 0;
 }

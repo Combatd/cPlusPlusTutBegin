@@ -9,9 +9,15 @@
 #define Cat_h
 
 class Cat {
+private:
+    bool happy;
 public:
     void speak();
     void jump();
+    void makeHappy();
+    void makeSad();
+    Cat(); // constructor
+    ~Cat(); // destructor
 };
 
 #endif /* Cat_h */
