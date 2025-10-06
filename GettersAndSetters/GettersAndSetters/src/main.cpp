@@ -6,9 +6,15 @@
 //
 
 #include <iostream>
+#include "Person.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    Person person1;
+    
+    person1.setName("Georgina");
+    
+    std::cout << person1.toString() << std::endl;
+    
     return 0;
 }
