@@ -16,5 +16,7 @@ int main(int argc, const char * argv[]) {
     
     std::cout << person1.toString() << std::endl;
     
+    std::cout << "person1 name at the end: " << person1.getName() << std::endl;
+    
     return 0;
 }

@@ -16,6 +16,10 @@ std::string Person::toString() {
     return "Person's name is: " + name;
 };
 
+std::string Person::getName() {
+    return name;
+};
+
 void Person::setName(std::string newName) {
     name = newName;
 }

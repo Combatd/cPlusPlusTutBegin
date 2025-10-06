@@ -18,6 +18,7 @@ public:
     Person();
     std::string toString();
     void setName(std::string newName);
+    std::string getName();
 };
 
 #endif /* Person_h */
