@@ -18,7 +18,7 @@ private:
 public:
     Person();
     // Person(std::string newName) { name = newName };
-    Person(std::string newName, int newAge);
+    Person(std::string name, int age);
     std::string toString();
 };
 
