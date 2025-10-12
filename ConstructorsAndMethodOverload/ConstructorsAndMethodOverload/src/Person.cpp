@@ -9,8 +9,8 @@
 #include "Person.h"
 #include <sstream>
 
-Person::Person() {
-    age = 0;
+Person::Person(): age(0) {
+//    age = 0;
     name = "";
 }
 
@@ -21,9 +21,9 @@ Person::Person() {
  so...person1, person2 as opposed to the Person class's variables
  */
 
-Person::Person(std::string name, int age) {
-    this->name = name;
-    this->age = age;
+Person::Person(std::string name, int age): age(age), name(name) {
+//    this->name = name;
+//    this->age = age;
 };
 
 std::string Person::toString() {

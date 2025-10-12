@@ -18,6 +18,7 @@ private:
 public:
     Person();
     // Person(std::string newName) { name = newName };
+    // Person(std::string name, int age): name(name), age(age) {};
     Person(std::string name, int age);
     std::string toString();
 };
