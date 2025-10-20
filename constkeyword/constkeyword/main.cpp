@@ -14,11 +14,31 @@ private:
     
 public:
     void setName(string name) { this->name = name;  }
-    void speak() { cout << "My name is: " << name << endl; }
+    void speak() const { cout << "My name is: " << name << endl; }
 };
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    const double PI = 3.141592;
+    cout << PI << endl;
+    
+    
+    Animal animal;
+    animal.setName("Freddy");
+    animal.speak();
+    
+    int value = 8;
+    
+    /*
+     If you want to verify things, read them backwards. const, types....
+     */
+    // const int *pValue = &value;
+    int *pValue = &value;
+    cout << *pValue << endl;
+    
+    int number = 11;
+    pValue = &number;
+    cout << *pValue << endl;
+    
     return 0;
 }
