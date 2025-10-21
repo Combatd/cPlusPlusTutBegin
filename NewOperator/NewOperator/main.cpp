@@ -35,7 +35,7 @@ public:
     }
 };
 
-Animal *createAnimal() {
+Animal * createAnimal() {
     Animal *a = new Animal();
     a->setName("Fredo");
     return a;
@@ -45,5 +45,14 @@ int main(int argc, const char * argv[]) {
     Animal cat;
     cat.setName("Freddy");
     cat.speak();
+    
+    Animal *pCat1 = new Animal();
+    pCat1->setName("Freddy");
+    pCat1->speak();
+    delete pCat1;
+    
+    // Animal *pCat2 = NULL; as a reminder that a pointer is null if not set
+    cout << sizeof(pCat1) << endl;
+    
     return 0;
 }
