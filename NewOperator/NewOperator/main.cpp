@@ -35,10 +35,10 @@ public:
     }
 };
 
-Animal * createAnimal() {
-    Animal *a = new Animal();
-    a->setName("Fredo");
-    return a;
+Animal *createAnimal() {
+    Animal *pAnimal = new Animal();
+    pAnimal->setName("Birtie");
+    return pAnimal;
 }
 
 int main(int argc, const char * argv[]) {
@@ -53,6 +53,12 @@ int main(int argc, const char * argv[]) {
     
     // Animal *pCat2 = NULL; as a reminder that a pointer is null if not set
     cout << sizeof(pCat1) << endl;
+    
+    Animal *pFrog = createAnimal();
+    
+    pFrog->speak();
+    
+    delete pFrog;
     
     return 0;
 }
