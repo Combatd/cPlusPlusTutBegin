@@ -42,7 +42,23 @@ Animal *createAnimal() {
 }
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    int *pInt = new int;
+    *pInt = 9;
+    cout << *pInt << endl;
+    delete pInt;
+    
+    Animal *pAnimal = new Animal[10]();
+    pAnimal[5].setName("George");
+    pAnimal[5].speak();
+    delete [] pAnimal;
+    
+    char *pMem = new char[1000]; // 1000 bytes
+    delete [] pMem;
+    
+    char c = 'a';
+    string name(1, c);
+    cout << name << endl;
+    
     return 0;
 }
