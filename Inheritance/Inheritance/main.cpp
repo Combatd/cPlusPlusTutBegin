@@ -23,6 +23,20 @@ public:
     }
 };
 
+class Frog: public Animal {
+private:
+    string name;
+private:
+    void info() {
+        cout << "hidden data that shouldn't be accessed outside the instance" << endl;
+    }
+public:
+    Frog(string name): name(name) {}
+    string getName() {
+        return this->name;
+    }
+};
+
 class Tiger: public Cat {
 public:
     void attackPrey() {
@@ -40,6 +54,10 @@ int main(int argc, const char * argv[]) {
     tiger1.speak();
     tiger1.jump();
     tiger1.attackPrey(); // => "Attacking prey!"
+    
+    Frog frog1("Freddy");
+    cout << frog1.getName() << endl;
+    // cout << frog1.info() << endl; // only other methods inside the class can invoke Frog::info()
     
     return 0;
 }
