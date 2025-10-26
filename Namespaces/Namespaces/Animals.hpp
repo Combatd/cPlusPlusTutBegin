@@ -1,20 +1,21 @@
 //
-//  Cat.hpp
+//  Animals.hpp
 //  Namespaces
 //
 //  Created by Mark Calvelo on 10/25/25.
 //
 
-#ifndef Cat_hpp
-#define Cat_hpp
+#ifndef Animals_hpp
+#define Animals_hpp
 
 #include <stdio.h>
 #include <iostream>
 
-namespace Felines {
-std::string static CATNAME = "Freddy";
 
-    class Cat {
+namespace Animals {
+std::string static CATNAME = "Clive";
+
+class Cat {
     public:
         Cat();
         virtual ~Cat();
@@ -22,6 +23,4 @@ std::string static CATNAME = "Freddy";
     };
 }
 
-
-
-#endif /* Cat_hpp */
+#endif /* Animals_hpp */

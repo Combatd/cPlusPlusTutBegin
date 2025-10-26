@@ -1,14 +1,14 @@
 //
-//  Cat.cpp
+//  Animals.cpp
 //  Namespaces
 //
 //  Created by Mark Calvelo on 10/25/25.
 //
 
-#include "Cat.hpp"
+#include "Animals.hpp"
 #include <iostream>
 
-namespace Felines {
+namespace Animals {
     Cat::Cat() {
         
     }
@@ -18,8 +18,6 @@ namespace Felines {
     }
 
     void Cat::speak() {
-        std::cout << "Meow" << std::endl;
+        std::cout << "hissss" << std::endl;
     }
 }
-
-
