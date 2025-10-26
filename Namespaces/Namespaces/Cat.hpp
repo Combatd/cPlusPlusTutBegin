@@ -10,4 +10,11 @@
 
 #include <stdio.h>
 
+class Cat {
+public:
+    Cat();
+    virtual ~Cat();
+    void speak();
+};
+
 #endif /* Cat_hpp */
